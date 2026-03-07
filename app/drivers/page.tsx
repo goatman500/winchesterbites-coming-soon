@@ -78,7 +78,7 @@ export default async function DriversPage({
                     name="name"
                     required
                     placeholder="Your full name"
-                    className="w-full rounded-2xl border border-slate-300 bg-white px-4 py-3 text-slate-900 outline-none transition focus:border-green-500"
+                    className="w-full rounded-2xl border border-slate-300 bg-white px-4 py-3 text-black outline-none transition focus:border-green-500"
                   />
                 </div>
 
@@ -92,7 +92,7 @@ export default async function DriversPage({
                       name="email"
                       required
                       placeholder="you@example.com"
-                      className="w-full rounded-2xl border border-slate-300 bg-white px-4 py-3 text-slate-900 outline-none transition focus:border-green-500"
+                      className="w-full rounded-2xl border border-slate-300 bg-white px-4 py-3 text-black outline-none transition focus:border-green-500"
                     />
                   </div>
 
@@ -104,7 +104,7 @@ export default async function DriversPage({
                       type="tel"
                       name="phone"
                       placeholder="Phone number"
-                      className="w-full rounded-2xl border border-slate-300 bg-white px-4 py-3 text-slate-900 outline-none transition focus:border-green-500"
+                      className="w-full rounded-2xl border border-slate-300 bg-white px-4 py-3 text-black outline-none transition focus:border-green-500"
                     />
                   </div>
                 </div>
@@ -116,7 +116,7 @@ export default async function DriversPage({
                   <select
                     name="vehicle"
                     defaultValue="Car"
-                    className="w-full rounded-2xl border border-slate-300 bg-white px-4 py-3 text-slate-900 outline-none transition focus:border-green-500"
+                    className="w-full rounded-2xl border border-slate-300 bg-white px-4 py-3 text-black outline-none transition focus:border-green-500"
                   >
                     <option>Car</option>
                     <option>SUV</option>
@@ -133,7 +133,7 @@ export default async function DriversPage({
                     name="message"
                     rows={5}
                     placeholder="Tell us about yourself"
-                    className="w-full rounded-2xl border border-slate-300 bg-white px-4 py-3 text-slate-900 outline-none transition focus:border-green-500"
+                    className="w-full rounded-2xl border border-slate-300 bg-white px-4 py-3 text-black outline-none transition focus:border-green-500"
                   />
                 </div>
 
