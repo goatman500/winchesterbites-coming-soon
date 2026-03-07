@@ -1,11 +1,12 @@
 import Link from "next/link";
 
-export default function DriversPage({
+export default async function DriversPage({
   searchParams,
 }: {
-  searchParams?: { submitted?: string };
+  searchParams: Promise<{ submitted?: string }>;
 }) {
-  const submitted = searchParams?.submitted === "true";
+  const params = await searchParams;
+  const submitted = params?.submitted === "true";
 
   return (
     <main className="min-h-screen bg-black text-white">
@@ -40,11 +41,9 @@ export default function DriversPage({
                 <div className="text-sm font-semibold uppercase tracking-[0.35em] text-green-400">
                   Driver Opportunities
                 </div>
-
                 <h1 className="mt-4 text-4xl font-semibold text-white sm:text-5xl">
                   Drive with WinchesterBites
                 </h1>
-
                 <p className="mt-4 max-w-2xl text-lg leading-8 text-white/70">
                   Join our early driver network and help bring local food
                   delivery to Winchester and Frederick County.
@@ -114,8 +113,8 @@ export default function DriversPage({
                   </label>
                   <select
                     name="vehicle"
-                    className="w-full rounded-2xl border border-white/10 bg-black/30 px-4 py-3 text-white outline-none transition focus:border-green-400"
                     defaultValue="Car"
+                    className="w-full rounded-2xl border border-white/10 bg-black/30 px-4 py-3 text-white outline-none transition focus:border-green-400"
                   >
                     <option>Car</option>
                     <option>SUV</option>

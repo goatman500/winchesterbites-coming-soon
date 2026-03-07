@@ -1,17 +1,17 @@
 import Link from "next/link";
 
-export default function RestaurantsJoinPage({
+export default async function RestaurantsJoinPage({
   searchParams,
 }: {
-  searchParams?: { submitted?: string };
+  searchParams: Promise<{ submitted?: string }>;
 }) {
-  const submitted = searchParams?.submitted === "true";
+  const params = await searchParams;
+  const submitted = params?.submitted === "true";
 
   return (
     <main className="min-h-screen bg-black text-white">
       <section className="mx-auto flex min-h-screen max-w-4xl items-center px-6 py-20">
         <div className="w-full rounded-3xl border border-white/10 bg-white/5 p-8 backdrop-blur-sm sm:p-10">
-
           <div className="mb-6">
             <Link
               href="/"
@@ -22,19 +22,15 @@ export default function RestaurantsJoinPage({
           </div>
 
           {submitted ? (
-            <div className="text-center py-10">
-              <h1 className="text-4xl font-semibold text-white">
-                Thank You!
-              </h1>
-
+            <div className="py-10 text-center">
+              <h1 className="text-4xl font-semibold text-white">Thank You!</h1>
               <p className="mt-4 text-lg text-white/70">
                 Your submission has been received. Someone from WinchesterBites
                 will be reaching out to you soon.
               </p>
-
               <Link
                 href="/"
-                className="mt-8 inline-block rounded-full bg-blue-500 px-8 py-3 font-semibold text-white hover:bg-blue-600"
+                className="mt-8 inline-block rounded-full bg-blue-500 px-8 py-3 font-semibold text-white transition hover:bg-blue-600"
               >
                 Return Home
               </Link>
@@ -45,11 +41,9 @@ export default function RestaurantsJoinPage({
                 <div className="text-sm font-semibold uppercase tracking-[0.35em] text-blue-400">
                   Restaurant Partners
                 </div>
-
                 <h1 className="mt-4 text-4xl font-semibold text-white sm:text-5xl">
                   Partner with WinchesterBites
                 </h1>
-
                 <p className="mt-4 max-w-2xl text-lg leading-8 text-white/70">
                   We’re welcoming early restaurant partners as WinchesterBites
                   prepares to launch in Winchester and Frederick County.
