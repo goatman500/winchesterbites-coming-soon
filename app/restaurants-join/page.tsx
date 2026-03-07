@@ -27,14 +27,32 @@ export default function RestaurantsJoinPage() {
             </p>
           </div>
 
-          <form className="grid gap-5">
+          <form
+            action="https://formsubmit.co/conner.brach@outlook.com"
+            method="POST"
+            className="grid gap-5"
+          >
+            <input type="hidden" name="_captcha" value="false" />
+            <input
+              type="hidden"
+              name="_subject"
+              value="New WinchesterBites Restaurant Signup"
+            />
+            <input
+              type="hidden"
+              name="_next"
+              value="https://www.winchesterbites.com/restaurants-join?submitted=true"
+            />
+
             <div>
               <label className="mb-2 block text-sm font-medium text-white/80">
                 Restaurant Name
               </label>
               <input
                 type="text"
+                name="restaurantName"
                 placeholder="Your restaurant name"
+                required
                 className="w-full rounded-2xl border border-white/10 bg-black/30 px-4 py-3 text-white outline-none transition focus:border-blue-400"
               />
             </div>
@@ -45,7 +63,9 @@ export default function RestaurantsJoinPage() {
               </label>
               <input
                 type="text"
+                name="contactName"
                 placeholder="Your name"
+                required
                 className="w-full rounded-2xl border border-white/10 bg-black/30 px-4 py-3 text-white outline-none transition focus:border-blue-400"
               />
             </div>
@@ -57,7 +77,9 @@ export default function RestaurantsJoinPage() {
                 </label>
                 <input
                   type="email"
+                  name="email"
                   placeholder="you@example.com"
+                  required
                   className="w-full rounded-2xl border border-white/10 bg-black/30 px-4 py-3 text-white outline-none transition focus:border-blue-400"
                 />
               </div>
@@ -68,6 +90,7 @@ export default function RestaurantsJoinPage() {
                 </label>
                 <input
                   type="tel"
+                  name="phone"
                   placeholder="Phone number"
                   className="w-full rounded-2xl border border-white/10 bg-black/30 px-4 py-3 text-white outline-none transition focus:border-blue-400"
                 />
@@ -79,6 +102,7 @@ export default function RestaurantsJoinPage() {
                 Message
               </label>
               <textarea
+                name="message"
                 rows={5}
                 placeholder="Tell us about your restaurant"
                 className="w-full rounded-2xl border border-white/10 bg-black/30 px-4 py-3 text-white outline-none transition focus:border-blue-400"
