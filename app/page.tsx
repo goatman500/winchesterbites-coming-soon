@@ -3,21 +3,14 @@ import Link from "next/link";
 
 export default function Home() {
   return (
-    <main className="bg-gradient-to-br from-green-600 via-blue-600 to-orange-500 text-white">
-      {/* HERO */}
+    <main className="min-h-screen bg-gradient-to-br from-blue-50 via-white to-green-50 text-slate-900">
       <section className="relative min-h-screen overflow-hidden">
+        <div className="absolute inset-0 bg-[radial-gradient(circle_at_top,rgba(37,99,235,0.10),transparent_35%),radial-gradient(circle_at_bottom_right,rgba(34,197,94,0.10),transparent_30%)]" />
 
-        {/* Dark overlay */}
-        <div className="absolute inset-0 bg-black/55" />
-
-        {/* Soft gradient overlay */}
-        <div className="absolute inset-0 bg-gradient-to-b from-black/30 via-black/40 to-black/75" />
-
-        {/* Top brand */}
-        <div className="absolute top-0 left-0 right-0 z-20">
-          <div className="mx-auto flex max-w-7xl items-center justify-between px-6 py-6">
+        <header className="relative z-20 border-b border-slate-200/80 bg-white/70 backdrop-blur">
+          <div className="mx-auto flex max-w-7xl items-center justify-between px-6 py-5">
             <Link href="/" className="flex items-center gap-3">
-              <div className="relative h-12 w-12 overflow-hidden rounded-xl border border-white/20 bg-white/10 backdrop-blur">
+              <div className="relative h-12 w-12 overflow-hidden rounded-2xl bg-white shadow-sm ring-1 ring-slate-200">
                 <Image
                   src="/logo-preview.png"
                   alt="WinchesterBites logo"
@@ -27,139 +20,151 @@ export default function Home() {
               </div>
 
               <div>
-                <div className="text-2xl font-bold tracking-tight">
-                  Winchester<span className="text-orange-400">Bites</span>
+                <div className="text-2xl font-black tracking-tight text-slate-900">
+                  WinchesterBites
                 </div>
-                <div className="text-xs uppercase tracking-[0.35em] text-white/70">
+                <div className="text-xs font-semibold uppercase tracking-[0.35em] text-slate-500">
                   Coming Soon
                 </div>
               </div>
             </Link>
 
-            <nav className="hidden items-center gap-8 text-sm font-medium text-white/80 md:flex">
-              <Link href="/restaurants-join" className="transition hover:text-white">
+            <nav className="hidden items-center gap-8 text-sm font-semibold text-slate-600 md:flex">
+              <Link href="/restaurants-join" className="transition hover:text-blue-600">
                 Restaurants
               </Link>
-              <Link href="/drivers" className="transition hover:text-white">
+              <Link href="/drivers" className="transition hover:text-green-600">
                 Drivers
               </Link>
             </nav>
           </div>
-        </div>
+        </header>
 
-        {/* Center content */}
-        <div className="relative z-10 flex min-h-screen items-center justify-center px-6 text-center">
-          <div className="max-w-4xl animate-fade-up">
-            <div className="mx-auto mb-8 flex justify-center">
-              <Image
-                src="/logo-preview.png"
-                alt="WinchesterBites"
-                width={520}
-                height={220}
-                className="h-auto w-full max-w-2xl drop-shadow-[0_20px_60px_rgba(0,0,0,0.5)]"
-                priority
-              />
-            </div>
-
-            <div className="mb-4 text-sm font-semibold uppercase tracking-[0.45em] text-white/80 sm:text-base">
-              WinchesterBites.com
-            </div>
-
-            <h1 className="text-5xl font-semibold tracking-tight text-white sm:text-6xl md:text-7xl">
-              Launching Soon
-            </h1>
-
-            <p className="mx-auto mt-6 max-w-2xl text-lg leading-8 text-white/80 sm:text-xl">
-              A new local food delivery platform for Winchester and Frederick County.
-              Now welcoming early restaurant partners and drivers.
-            </p>
-
-            <div className="mt-10 flex flex-col items-center justify-center gap-4 sm:flex-row">
-              <Link
-                href="/restaurants-join"
-                className="rounded-full bg-blue-500 px-8 py-4 font-semibold text-white shadow-lg shadow-blue-500/25 transition duration-300 hover:-translate-y-1 hover:bg-blue-600"
-              >
-                Partner Your Restaurant
-              </Link>
-
-              <Link
-                href="/drivers"
-                className="rounded-full bg-orange-500 px-8 py-4 font-semibold text-white shadow-lg shadow-orange-500/25 transition duration-300 hover:-translate-y-1 hover:bg-orange-600"
-              >
-                Join as a Driver
-              </Link>
-            </div>
-          </div>
-        </div>
-
-        {/* Bottom fade */}
-        <div className="absolute bottom-0 left-0 right-0 h-32 bg-gradient-to-t from-black to-transparent" />
-      </section>
-
-      {/* SECTION BELOW HERO */}
-      <section className="bg-black px-6 py-20">
-        <div className="mx-auto max-w-6xl">
-          <div className="mb-12 text-center">
-            <div className="text-sm uppercase tracking-[0.35em] text-green-400">
-              Fast • Fresh • Local
-            </div>
-            <h2 className="mt-4 text-4xl font-semibold text-white sm:text-5xl">
-              Built for the local community
-            </h2>
-            <p className="mx-auto mt-5 max-w-2xl text-lg leading-8 text-white/70">
-              WinchesterBites is focused on connecting local restaurants, drivers,
-              and customers through a platform designed for this area.
-            </p>
-          </div>
-
-          <div className="grid gap-6 md:grid-cols-3">
-            <div className="rounded-3xl border border-white/10 bg-white/5 p-8 backdrop-blur-sm">
-              <div className="mb-4 text-sm font-semibold uppercase tracking-[0.25em] text-blue-400">
-                Restaurants
+        <div className="relative z-10 mx-auto flex min-h-[calc(100vh-80px)] max-w-7xl items-center px-6 py-16">
+          <div className="grid w-full items-center gap-14 lg:grid-cols-2">
+            <div className="animate-fade-up">
+              <div className="mb-5 inline-flex rounded-full bg-blue-100 px-4 py-2 text-sm font-semibold text-blue-700 ring-1 ring-blue-200">
+                Winchester & Frederick County
               </div>
-              <h3 className="text-2xl font-semibold text-white">
-                Restaurant-Friendly
-              </h3>
-              <p className="mt-4 leading-7 text-white/70">
-                Join early and grow with a platform focused on helping local
-                restaurants stand out.
+
+              <h1 className="max-w-2xl text-5xl font-black tracking-tight text-slate-900 sm:text-6xl">
+                A fresh new delivery platform is coming soon.
+              </h1>
+
+              <p className="mt-6 max-w-2xl text-lg leading-8 text-slate-600">
+                WinchesterBites is building a cleaner, more modern local delivery
+                experience for restaurants, drivers, and the community.
+              </p>
+
+              <div className="mt-8 flex flex-col gap-4 sm:flex-row">
+                <Link
+                  href="/restaurants-join"
+                  className="rounded-2xl bg-blue-600 px-7 py-4 text-center font-semibold text-white shadow-lg shadow-blue-200 transition hover:-translate-y-1 hover:bg-blue-700"
+                >
+                  Partner Your Restaurant
+                </Link>
+
+                <Link
+                  href="/drivers"
+                  className="rounded-2xl bg-green-500 px-7 py-4 text-center font-semibold text-white shadow-lg shadow-green-200 transition hover:-translate-y-1 hover:bg-green-600"
+                >
+                  Join as a Driver
+                </Link>
+              </div>
+
+              <p className="mt-5 text-sm font-medium text-slate-500">
+                Now welcoming early restaurant partners and drivers.
               </p>
             </div>
 
-            <div className="rounded-3xl border border-white/10 bg-white/5 p-8 backdrop-blur-sm">
-              <div className="mb-4 text-sm font-semibold uppercase tracking-[0.25em] text-green-400">
-                Community
-              </div>
-              <h3 className="text-2xl font-semibold text-white">
-                Local First
-              </h3>
-              <p className="mt-4 leading-7 text-white/70">
-                Built specifically for Winchester and Frederick County with a
-                stronger local focus.
-              </p>
-            </div>
+            <div className="animate-fade-up">
+              <div className="relative mx-auto max-w-xl">
+                <div className="absolute inset-0 rounded-[2rem] bg-blue-200/30 blur-3xl" />
+                <div className="relative rounded-[2rem] bg-white p-6 shadow-xl ring-1 ring-slate-200">
+                  <div className="flex justify-center rounded-[1.5rem] bg-gradient-to-br from-blue-50 via-white to-green-50 p-8">
+                    <Image
+                      src="/logo-preview.png"
+                      alt="WinchesterBites"
+                      width={520}
+                      height={220}
+                      priority
+                      className="h-auto w-full max-w-md object-contain"
+                    />
+                  </div>
 
-            <div className="rounded-3xl border border-white/10 bg-white/5 p-8 backdrop-blur-sm">
-              <div className="mb-4 text-sm font-semibold uppercase tracking-[0.25em] text-orange-400">
-                Drivers
+                  <div className="mt-6 grid gap-4 sm:grid-cols-3">
+                    <div className="rounded-2xl bg-blue-50 p-4 ring-1 ring-blue-100">
+                      <div className="text-sm font-semibold text-blue-700">Restaurants</div>
+                      <div className="mt-1 text-sm text-slate-600">
+                        Early partner opportunities
+                      </div>
+                    </div>
+
+                    <div className="rounded-2xl bg-green-50 p-4 ring-1 ring-green-100">
+                      <div className="text-sm font-semibold text-green-700">Drivers</div>
+                      <div className="mt-1 text-sm text-slate-600">
+                        Flexible local delivery
+                      </div>
+                    </div>
+
+                    <div className="rounded-2xl bg-slate-100 p-4 ring-1 ring-slate-200">
+                      <div className="text-sm font-semibold text-slate-700">Launch</div>
+                      <div className="mt-1 text-sm text-slate-600">
+                        Coming soon
+                      </div>
+                    </div>
+                  </div>
+                </div>
               </div>
-              <h3 className="text-2xl font-semibold text-white">
-                Flexible Opportunities
-              </h3>
-              <p className="mt-4 leading-7 text-white/70">
-                We’re looking for early drivers who want flexible delivery
-                opportunities close to home.
-              </p>
             </div>
           </div>
         </div>
       </section>
 
-      {/* FOOTER */}
-      <footer className="border-t border-white/10 bg-black px-6 py-8">
-        <div className="mx-auto flex max-w-6xl flex-col gap-3 text-sm text-white/60 sm:flex-row sm:items-center sm:justify-between">
+      <section className="mx-auto max-w-6xl px-6 pb-20">
+        <div className="grid gap-6 md:grid-cols-3">
+          <div className="animate-fade-up rounded-[1.75rem] bg-white p-7 shadow-sm ring-1 ring-slate-200 transition hover:-translate-y-1 hover:shadow-md">
+            <div className="mb-4 flex h-12 w-12 items-center justify-center rounded-2xl bg-blue-100 text-2xl">
+              🍽️
+            </div>
+            <h3 className="text-xl font-bold text-slate-900">
+              Restaurant-Friendly
+            </h3>
+            <p className="mt-3 leading-7 text-slate-600">
+              A platform built to support local restaurants and help them grow.
+            </p>
+          </div>
+
+          <div className="animate-fade-up rounded-[1.75rem] bg-white p-7 shadow-sm ring-1 ring-slate-200 transition hover:-translate-y-1 hover:shadow-md">
+            <div className="mb-4 flex h-12 w-12 items-center justify-center rounded-2xl bg-green-100 text-2xl">
+              📍
+            </div>
+            <h3 className="text-xl font-bold text-slate-900">
+              Local First
+            </h3>
+            <p className="mt-3 leading-7 text-slate-600">
+              Focused on Winchester and Frederick County with a community-first feel.
+            </p>
+          </div>
+
+          <div className="animate-fade-up rounded-[1.75rem] bg-white p-7 shadow-sm ring-1 ring-slate-200 transition hover:-translate-y-1 hover:shadow-md">
+            <div className="mb-4 flex h-12 w-12 items-center justify-center rounded-2xl bg-sky-100 text-2xl">
+              🚗
+            </div>
+            <h3 className="text-xl font-bold text-slate-900">
+              Driver Opportunities
+            </h3>
+            <p className="mt-3 leading-7 text-slate-600">
+              Flexible delivery opportunities for drivers who want to work close to home.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <footer className="border-t border-slate-200 bg-white">
+        <div className="mx-auto flex max-w-6xl flex-col gap-3 px-6 py-8 text-sm text-slate-500 sm:flex-row sm:items-center sm:justify-between">
           <div>© {new Date().getFullYear()} WinchesterBites</div>
-          <div>Winchester & Frederick County</div>
+          <div>Fresh • Local • Coming Soon</div>
         </div>
       </footer>
     </main>
