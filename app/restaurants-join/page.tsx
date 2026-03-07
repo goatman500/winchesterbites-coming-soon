@@ -9,9 +9,9 @@ export default async function RestaurantsJoinPage({
   const submitted = params?.submitted === "true";
 
   return (
-    <main className="min-h-screen bg-black text-white">
+    <main className="min-h-screen bg-gradient-to-br from-blue-50 via-white to-green-50 text-slate-900">
       <section className="mx-auto flex min-h-screen max-w-4xl items-center px-6 py-20">
-        <div className="w-full rounded-3xl border border-white/10 bg-white/5 p-8 backdrop-blur-sm sm:p-10">
+        <div className="w-full rounded-3xl border border-slate-200 bg-white p-8 shadow-lg sm:p-10">
           <div className="mb-6">
             <Link
               href="/"
@@ -68,7 +68,7 @@ export default async function RestaurantsJoinPage({
                 />
 
                 <div>
-                  <label className="mb-2 block text-sm font-medium text-white/80">
+                  <label className="mb-2 block text-sm font-medium text-slate-700">
                     Restaurant Name
                   </label>
                   <input
@@ -76,12 +76,12 @@ export default async function RestaurantsJoinPage({
                     name="restaurantName"
                     required
                     placeholder="Your restaurant name"
-                    className="w-full rounded-2xl border border-white/10 bg-black/30 px-4 py-3 text-white outline-none focus:border-blue-400"
+                    className="w-full rounded-2xl border border-slate-300 bg-white px-4 py-3 text-slate-900 outline-none focus:border-blue-500"
                   />
                 </div>
 
                 <div>
-                  <label className="mb-2 block text-sm font-medium text-white/80">
+                  <label className="mb-2 block text-sm font-medium text-slate-700">
                     Contact Name
                   </label>
                   <input

@@ -9,9 +9,9 @@ export default async function DriversPage({
   const submitted = params?.submitted === "true";
 
   return (
-    <main className="min-h-screen bg-black text-white">
+    <main className="min-h-screen bg-gradient-to-br from-blue-50 via-white to-green-50 text-slate-900">
       <section className="mx-auto flex min-h-screen max-w-4xl items-center px-6 py-20">
-        <div className="w-full rounded-3xl border border-white/10 bg-white/5 p-8 backdrop-blur-sm sm:p-10">
+        <div className="w-full rounded-3xl border border-slate-200 bg-white p-8 shadow-lg sm:p-10">
           <div className="mb-6">
             <Link
               href="/"
@@ -68,7 +68,7 @@ export default async function DriversPage({
                 />
 
                 <div>
-                  <label className="mb-2 block text-sm font-medium text-white/80">
+                  <label className="mb-2 block text-sm font-medium text-slate-700">
                     Full Name
                   </label>
                   <input
@@ -82,7 +82,7 @@ export default async function DriversPage({
 
                 <div className="grid gap-5 sm:grid-cols-2">
                   <div>
-                    <label className="mb-2 block text-sm font-medium text-white/80">
+                    <label className="mb-2 block text-sm font-medium text-slate-700">
                       Email
                     </label>
                     <input
@@ -95,7 +95,7 @@ export default async function DriversPage({
                   </div>
 
                   <div>
-                    <label className="mb-2 block text-sm font-medium text-white/80">
+                    <label className="mb-2 block text-sm font-medium text-slate-700">
                       Phone
                     </label>
                     <input
@@ -108,7 +108,7 @@ export default async function DriversPage({
                 </div>
 
                 <div>
-                  <label className="mb-2 block text-sm font-medium text-white/80">
+                  <label className="mb-2 block text-sm font-medium text-slate-700">
                     Vehicle Type
                   </label>
                   <select
@@ -124,7 +124,7 @@ export default async function DriversPage({
                 </div>
 
                 <div>
-                  <label className="mb-2 block text-sm font-medium text-white/80">
+                  <label className="mb-2 block text-sm font-medium text-slate-700">
                     Message (optional)
                   </label>
                   <textarea
