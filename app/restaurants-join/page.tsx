@@ -76,7 +76,7 @@ export default async function RestaurantsJoinPage({
                     name="restaurantName"
                     required
                     placeholder="Your restaurant name"
-                    className="w-full rounded-2xl border border-slate-300 bg-white px-4 py-3 text-slate-900 outline-none focus:border-blue-500"
+                    className="w-full rounded-2xl border border-slate-300 bg-white px-4 py-3 text-black outline-none transition focus:border-blue-500"
                   />
                 </div>
 
@@ -89,7 +89,7 @@ export default async function RestaurantsJoinPage({
                     name="contactName"
                     required
                     placeholder="Your name"
-                    className="w-full rounded-2xl border border-white/10 bg-black/30 px-4 py-3 text-white outline-none focus:border-blue-400"
+                    className="w-full rounded-2xl border border-slate-300 bg-white px-4 py-3 text-black outline-none transition focus:border-blue-500"
                   />
                 </div>
 
@@ -103,7 +103,7 @@ export default async function RestaurantsJoinPage({
                       name="email"
                       required
                       placeholder="you@example.com"
-                      className="w-full rounded-2xl border border-white/10 bg-black/30 px-4 py-3 text-white outline-none focus:border-blue-400"
+                      className="w-full rounded-2xl border border-slate-300 bg-white px-4 py-3 text-black outline-none transition focus:border-blue-500"
                     />
                   </div>
 
@@ -115,7 +115,7 @@ export default async function RestaurantsJoinPage({
                       type="tel"
                       name="phone"
                       placeholder="Phone number"
-                      className="w-full rounded-2xl border border-white/10 bg-black/30 px-4 py-3 text-white outline-none focus:border-blue-400"
+                      className="w-full rounded-2xl border border-slate-300 bg-white px-4 py-3 text-black outline-none transition focus:border-blue-500"
                     />
                   </div>
                 </div>
@@ -128,7 +128,7 @@ export default async function RestaurantsJoinPage({
                     name="message"
                     rows={5}
                     placeholder="Tell us about your restaurant"
-                    className="w-full rounded-2xl border border-white/10 bg-black/30 px-4 py-3 text-white outline-none focus:border-blue-400"
+                    className="w-full rounded-2xl border border-slate-300 bg-white px-4 py-3 text-black outline-none transition focus:border-blue-500"
                   />
                 </div>
 
