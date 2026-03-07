@@ -15,7 +15,7 @@ export default async function DriversPage({
           <div className="mb-6">
             <Link
               href="/"
-              className="inline-flex rounded-full border border-white/15 px-4 py-2 text-sm text-white/70 transition hover:text-white"
+              className="inline-flex rounded-full border border-slate-300 px-4 py-2 text-sm text-slate-600 transition hover:border-slate-400 hover:text-slate-900"
             >
               ← Back to Home
             </Link>
@@ -23,8 +23,10 @@ export default async function DriversPage({
 
           {submitted ? (
             <div className="py-10 text-center">
-              <h1 className="text-4xl font-semibold text-white">Thank You!</h1>
-              <p className="mt-4 text-lg text-white/70">
+              <h1 className="text-4xl font-semibold text-slate-900">
+                Thank You!
+              </h1>
+              <p className="mt-4 text-lg text-slate-600">
                 Your submission has been received. Someone from WinchesterBites
                 will be reaching out to you soon.
               </p>
@@ -38,13 +40,13 @@ export default async function DriversPage({
           ) : (
             <>
               <div className="mb-8">
-                <div className="text-sm font-semibold uppercase tracking-[0.35em] text-green-400">
+                <div className="text-sm font-semibold uppercase tracking-[0.35em] text-green-600">
                   Driver Opportunities
                 </div>
-                <h1 className="mt-4 text-4xl font-semibold text-white sm:text-5xl">
+                <h1 className="mt-4 text-4xl font-semibold text-slate-900 sm:text-5xl">
                   Drive with WinchesterBites
                 </h1>
-                <p className="mt-4 max-w-2xl text-lg leading-8 text-white/70">
+                <p className="mt-4 max-w-2xl text-lg leading-8 text-slate-600">
                   Join our early driver network and help bring local food
                   delivery to Winchester and Frederick County.
                 </p>
@@ -76,7 +78,7 @@ export default async function DriversPage({
                     name="name"
                     required
                     placeholder="Your full name"
-                    className="w-full rounded-2xl border border-white/10 bg-black/30 px-4 py-3 text-white outline-none transition focus:border-green-400"
+                    className="w-full rounded-2xl border border-slate-300 bg-white px-4 py-3 text-slate-900 outline-none transition focus:border-green-500"
                   />
                 </div>
 
@@ -90,7 +92,7 @@ export default async function DriversPage({
                       name="email"
                       required
                       placeholder="you@example.com"
-                      className="w-full rounded-2xl border border-white/10 bg-black/30 px-4 py-3 text-white outline-none transition focus:border-green-400"
+                      className="w-full rounded-2xl border border-slate-300 bg-white px-4 py-3 text-slate-900 outline-none transition focus:border-green-500"
                     />
                   </div>
 
@@ -102,7 +104,7 @@ export default async function DriversPage({
                       type="tel"
                       name="phone"
                       placeholder="Phone number"
-                      className="w-full rounded-2xl border border-white/10 bg-black/30 px-4 py-3 text-white outline-none transition focus:border-green-400"
+                      className="w-full rounded-2xl border border-slate-300 bg-white px-4 py-3 text-slate-900 outline-none transition focus:border-green-500"
                     />
                   </div>
                 </div>
@@ -114,7 +116,7 @@ export default async function DriversPage({
                   <select
                     name="vehicle"
                     defaultValue="Car"
-                    className="w-full rounded-2xl border border-white/10 bg-black/30 px-4 py-3 text-white outline-none transition focus:border-green-400"
+                    className="w-full rounded-2xl border border-slate-300 bg-white px-4 py-3 text-slate-900 outline-none transition focus:border-green-500"
                   >
                     <option>Car</option>
                     <option>SUV</option>
@@ -131,13 +133,13 @@ export default async function DriversPage({
                     name="message"
                     rows={5}
                     placeholder="Tell us about yourself"
-                    className="w-full rounded-2xl border border-white/10 bg-black/30 px-4 py-3 text-white outline-none transition focus:border-green-400"
+                    className="w-full rounded-2xl border border-slate-300 bg-white px-4 py-3 text-slate-900 outline-none transition focus:border-green-500"
                   />
                 </div>
 
                 <button
                   type="submit"
-                  className="rounded-full bg-green-500 px-8 py-4 font-semibold text-white shadow-lg shadow-green-500/25 transition hover:bg-green-600"
+                  className="rounded-full bg-green-500 px-8 py-4 font-semibold text-white shadow-lg shadow-green-200 transition hover:bg-green-600"
                 >
                   Apply to Drive
                 </button>

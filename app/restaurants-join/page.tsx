@@ -15,7 +15,7 @@ export default async function RestaurantsJoinPage({
           <div className="mb-6">
             <Link
               href="/"
-              className="inline-flex rounded-full border border-white/15 px-4 py-2 text-sm text-white/70 transition hover:text-white"
+              className="inline-flex rounded-full border border-white/15 px-4 py-2 text-sm text-blue/400 transition hover:text-white"
             >
               ← Back to Home
             </Link>
@@ -95,7 +95,7 @@ export default async function RestaurantsJoinPage({
 
                 <div className="grid gap-5 sm:grid-cols-2">
                   <div>
-                    <label className="mb-2 block text-sm font-medium text-white/80">
+                    <label className="mb-2 block text-sm font-medium text-slate-700">
                       Email
                     </label>
                     <input
@@ -108,7 +108,7 @@ export default async function RestaurantsJoinPage({
                   </div>
 
                   <div>
-                    <label className="mb-2 block text-sm font-medium text-white/80">
+                    <label className="mb-2 block text-sm font-medium text-slate-700">
                       Phone
                     </label>
                     <input
@@ -121,7 +121,7 @@ export default async function RestaurantsJoinPage({
                 </div>
 
                 <div>
-                  <label className="mb-2 block text-sm font-medium text-white/80">
+                  <label className="mb-2 block text-sm font-medium text-slate-700">
                     Message
                   </label>
                   <textarea
