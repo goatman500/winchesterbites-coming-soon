@@ -3,17 +3,9 @@ import Link from "next/link";
 
 export default function Home() {
   return (
-    <main className="bg-black text-white">
+    <main className="bg-gradient-to-br from-green-600 via-blue-600 to-orange-500 text-white">
       {/* HERO */}
       <section className="relative min-h-screen overflow-hidden">
-        {/* Background image */}
-        <Image
-          src="/hero-bg.jpg"
-          alt="WinchesterBites background"
-          fill
-          priority
-          className="object-cover"
-        />
 
         {/* Dark overlay */}
         <div className="absolute inset-0 bg-black/55" />
