@@ -23,11 +23,16 @@ export default async function RestaurantsJoinPage({
 
           {submitted ? (
             <div className="py-10 text-center">
-              <h1 className="text-4xl font-semibold text-white">Thank You!</h1>
-              <p className="mt-4 text-lg text-white/70">
-                Your submission has been received. Someone from WinchesterBites
-                will be reaching out to you soon.
+              
+              <h1 className="text-4xl font-semibold text-slate-900">
+                Thank You!
+             </h1>
+               
+              <p className="mt-4 text-lg text-slate-600">
+              Your submission has been received. Someone from WinchesterBites
+              will be reaching out to you soon.
               </p>
+             
               <Link
                 href="/"
                 className="mt-8 inline-block rounded-full bg-blue-500 px-8 py-3 font-semibold text-white transition hover:bg-blue-600"
