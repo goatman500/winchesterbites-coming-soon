@@ -33,12 +33,7 @@ export default function Home() {
             >
               Restaurants
             </Link>
-            <Link
-              href="/advertise"
-              className="transition hover:text-emerald-600"
-            >
-              Advertise
-            </Link>
+            
           </nav>
         </div>
       </header>
@@ -67,26 +62,20 @@ export default function Home() {
           </h1>
 
           <p className="mt-6 max-w-2xl text-lg leading-8 text-slate-600">
-            WinchesterBites is preparing to launch as a local advertising board
-            built to help restaurants promote their menus, specials, events,
-            and business to customers across Winchester and Frederick County.
+            WinchesterBites is preparing to launch as a local platform helping
+            restaurants promote their menus, specials, and events to customers
+            across Winchester and Frederick County.
           </p>
 
-          <div className="mt-10 flex flex-col gap-4 sm:flex-row">
-            <Link
-              href="/restaurants-join"
-              className="rounded-full bg-sky-600 px-8 py-4 font-semibold text-white shadow-lg shadow-sky-200 transition hover:-translate-y-1 hover:bg-sky-700"
-            >
-              Join as a Restaurant Partner
-            </Link>
-
-            <Link
-              href="/advertise"
-              className="rounded-full bg-emerald-500 px-8 py-4 font-semibold text-white shadow-lg shadow-emerald-200 transition hover:-translate-y-1 hover:bg-emerald-600"
-            >
-              Reserve Advertising Spot
-            </Link>
-          </div>
+  <div className="mt-10">
+   <Link
+     href="/restaurants-join"
+     className="rounded-full bg-sky-600 px-8 py-4 font-semibold text-white shadow-lg shadow-sky-200 transition hover:-translate-y-1 hover:bg-sky-700"
+  >
+    Join as a Restaurant Partner
+  </Link>
+</div>
+        
         </div>
       </section>
     </main>
