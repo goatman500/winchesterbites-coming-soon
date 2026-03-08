@@ -57,7 +57,7 @@ export default function Home() {
           </div>
 
           <h1 className="max-w-3xl text-4xl font-black tracking-tight text-slate-900 sm:text-5xl md:text-6xl">
-            Food delivery built for Winchester.
+            Local Restaurant Advertising & Discovery Platform.
           </h1>
 
           <p className="mt-6 max-w-2xl text-lg leading-8 text-slate-600">
