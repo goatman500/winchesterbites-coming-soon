@@ -21,17 +21,23 @@ export default function Home() {
                 WinchesterBites
               </div>
               <div className="text-xs font-semibold uppercase tracking-[0.3em] text-slate-500">
-                Coming Soon
+                Advertising Platform Coming Soon
               </div>
             </div>
           </Link>
 
           <nav className="hidden items-center gap-8 text-sm font-semibold text-slate-600 md:flex">
-            <Link href="/restaurants-join" className="transition hover:text-sky-600">
+            <Link
+              href="/restaurants-join"
+              className="transition hover:text-sky-600"
+            >
               Restaurants
             </Link>
-            <Link href="/drivers" className="transition hover:text-emerald-600">
-              Drivers
+            <Link
+              href="/advertise"
+              className="transition hover:text-emerald-600"
+            >
+              Advertise
             </Link>
           </nav>
         </div>
@@ -57,12 +63,13 @@ export default function Home() {
           </div>
 
           <h1 className="max-w-3xl text-4xl font-black tracking-tight text-slate-900 sm:text-5xl md:text-6xl">
-            Local Restaurant Advertising & Discovery Platform.
+            Local Restaurant Advertising Platform
           </h1>
 
           <p className="mt-6 max-w-2xl text-lg leading-8 text-slate-600">
-            WinchesterBites is preparing to launch and is now welcoming early
-            restaurant partners and delivery drivers.
+            WinchesterBites is preparing to launch as a local advertising board
+            built to help restaurants promote their menus, specials, events,
+            and business to customers across Winchester and Frederick County.
           </p>
 
           <div className="mt-10 flex flex-col gap-4 sm:flex-row">
@@ -70,14 +77,14 @@ export default function Home() {
               href="/restaurants-join"
               className="rounded-full bg-sky-600 px-8 py-4 font-semibold text-white shadow-lg shadow-sky-200 transition hover:-translate-y-1 hover:bg-sky-700"
             >
-              Partner Your Restaurant
+              Join as a Restaurant Partner
             </Link>
 
             <Link
-              href="/drivers"
+              href="/advertise"
               className="rounded-full bg-emerald-500 px-8 py-4 font-semibold text-white shadow-lg shadow-emerald-200 transition hover:-translate-y-1 hover:bg-emerald-600"
             >
-              Join as a Driver
+              Reserve Advertising Spot
             </Link>
           </div>
         </div>
